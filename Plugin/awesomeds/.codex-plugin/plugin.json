@@ -1,0 +1,18 @@
+{
+  "name": "awesomeds",
+  "version": "0.1.0",
+  "description": "Apply, create and verify purposeful design systems.",
+  "author": {
+    "name": "AwesomeDS"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AwesomeDS",
+    "shortDescription": "Design systems with intent and evidence.",
+    "longDescription": "Four portable skills for applying AwesomeDS, discovering a brand, verifying interfaces and developing user journeys.",
+    "developerName": "AwesomeDS",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use AwesomeDS to design and validate this interface."
+  }
+}

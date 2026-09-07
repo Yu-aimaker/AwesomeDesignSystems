@@ -1,0 +1,33 @@
+{
+  "name": "awesomedsastrawork",
+  "version": "1.1.0",
+  "description": "Evidence-backed design system, portable skills and interactive showcase",
+  "scripts": {
+    "dev": "node scripts/prepare.mjs && vite",
+    "build": "node scripts/prepare.mjs && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "node scripts/check-tokens.mjs && python3 Plugin/test_install.py && python3 Plugin/awesomeds/scripts/sync_assets.py --check"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "dependencies": {
+    "dompurify": "^3.4.15",
+    "lottie-web": "^5.13.0",
+    "lucide-react": "^1.41.0",
+    "marked": "^18.0.11",
+    "motion": "^13.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  },
+  "private": true
+}

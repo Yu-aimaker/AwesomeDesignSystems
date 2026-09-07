@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {execFileSync} from 'node:child_process';
+const root=path.resolve(import.meta.dirname,'..');
+const t=JSON.parse(fs.readFileSync(path.join(root,'AwesomeDS/tokens.json'),'utf8'));
+const kebab=s=>s.replace(/[A-Z]/g,c=>'-'+c.toLowerCase());
+const vars=obj=>Object.entries(obj).map(([k,v])=>`--${kebab(k)}:${v};`).join('\n');
+let css=`/* Generated from AwesomeDS/tokens.json. Do not edit. */\n:root{\n${vars(t.color.light)}\n--font-sans:${t.typography.fontSans};\n--font-mono:${t.typography.fontMono};\n--body-size:${t.typography.bodySize}px;\n--line-height:${t.typography.lineHeight};\n`;
+for(const [k,v]of Object.entries(t.editorial??{}))css+=`--editorial-${kebab(k)}:${v}px;\n`;
+for(const [k,v]of Object.entries(t.spacing))css+=`--space-${k}:${v}px;\n`;
+for(const [k,v]of Object.entries(t.radius))css+=`--radius-${k}:${v}px;\n`;
+for(const [k,v]of Object.entries(t.motion))css+=`--duration-${k}:${v}ms;\n`;
+css+=`--control-min:${t.sizing.controlMin}px;\n}\n[data-theme=dark]{${vars(t.color.dark)}color-scheme:dark;}\n`;
+fs.mkdirSync(path.join(root,'src'),{recursive:true});fs.writeFileSync(path.join(root,'src/tokens.css'),css);
+fs.mkdirSync(path.join(root,'public/downloads'),{recursive:true});fs.copyFileSync(path.join(root,'AwesomeDS/tokens.json'),path.join(root,'public/downloads/tokens.json'));
+execFileSync('python3',[path.join(root,'Plugin/awesomeds/scripts/sync_assets.py')],{stdio:'inherit'});
+console.log('Canonical tokens, skill resources  prepared.');

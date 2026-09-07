@@ -1,0 +1,57 @@
+name: Weekly design knowledge review
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Monday 09:00 JST / 00:00 UTC; GitHub may delay scheduled jobs.
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: weekly-design-review
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch primary sources and record actual changes
+        id: research
+        continue-on-error: true
+        run: node scripts/weekly-review.mjs
+      - name: Retain report even when sources fail
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-source-review
+          path: |
+            docs/weekly-review.md
+            docs/research-state.json
+      - name: Create review branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -b "automation/design-review-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git add docs/weekly-review.md docs/research-state.json
+          git commit -m "docs: weekly design source review"
+          git push origin HEAD
+      - name: Open review pull request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const body = fs.readFileSync('docs/weekly-review.md', 'utf8');
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `automation/design-review-${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT}`,
+              base: context.payload.repository.default_branch,
+              title: `Weekly design source review · ${new Date().toISOString().slice(0, 10)}`,
+              body,
+              draft: true
+            });
+      - name: Signal total source failure
+        if: steps.research.outcome == 'failure'
+        run: exit 1

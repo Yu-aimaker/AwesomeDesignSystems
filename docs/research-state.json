@@ -1,0 +1,98 @@
+{
+  "https://www.w3.org/TR/WCAG22/": {
+    "name": "WCAG 2.2",
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "sha256": "6e3c5fe397257cae509a2fb4752b73062cf8cbeb92c2cec618989b17e4cf7057",
+    "bytes": 512457,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://www.w3.org/TR/WCAG22/"
+  },
+  "https://www.w3.org/WAI/ARIA/apg/patterns/": {
+    "name": "ARIA APG",
+    "title": " Patterns | APG | WAI | W3C",
+    "sha256": "e4cdf11b060cb39be7adcc4451f24745b930225a87dcc1391a05ae47a06d7f66",
+    "bytes": 49239,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://www.w3.org/WAI/ARIA/apg/patterns/"
+  },
+  "https://developer.apple.com/design/human-interface-guidelines/": {
+    "name": "Apple Human Interface Guidelines",
+    "title": "Human Interface Guidelines | Apple Developer Documentation",
+    "sha256": "0efc75b2318724aae30ea558bed1631b8331aa0d16c487fbed61b1854e43bcb6",
+    "bytes": 17681,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://developer.apple.com/design/human-interface-guidelines/"
+  },
+  "https://m3.material.io/": {
+    "name": "Material Design",
+    "title": "Material Design",
+    "sha256": "f3a76c3b2a824dad01eb327e5fc377576828f6de2a5c4c069a1b1975a0c5a41c",
+    "bytes": 62132,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://m3.material.io/"
+  },
+  "https://ui.shadcn.com/docs": {
+    "name": "shadcn/ui",
+    "title": "Introduction - shadcn/ui",
+    "sha256": "5482e690df2faa237037704c17b11c952e45b12b0071b8bf80ec93ae4add9e9a",
+    "bytes": 525613,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://ui.shadcn.com/docs"
+  },
+  "https://www.assistant-ui.com/docs": {
+    "name": "assistant-ui",
+    "title": "Documentation · assistant-ui",
+    "sha256": "50d2d33e7a4c49728db8a5bb651acbe3be9def3e8749ed82bfb1798a5447d59b",
+    "bytes": 366282,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://www.assistant-ui.com/docs"
+  },
+  "https://threejs.org/docs/": {
+    "name": "Three.js",
+    "title": "three.js docs",
+    "sha256": "b2afe53adbaa10e0b1f82531ccab2f0e95f7ac8e586bc17bb552a17f9018d6c3",
+    "bytes": 136135,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://threejs.org/docs/"
+  },
+  "https://github.com/airbnb/lottie-web": {
+    "name": "Lottie web",
+    "title": "GitHub - airbnb/lottie-web: Render After Effects animations natively on Web, Android and iOS, and React Native. http://airbnb.io/lottie/ · GitHub",
+    "sha256": "44568562da8c2186133767bdc7d795b5e9f4985f04d1a4caf41f9fba10f667e8",
+    "bytes": 453667,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://github.com/airbnb/lottie-web"
+  },
+  "https://github.com/voltagent/awesome-design-md": {
+    "name": "awesome-design-md",
+    "title": "GitHub - VoltAgent/awesome-design-md: A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching",
+    "sha256": "ac5455837f8062cbf8f98622cf656a424ae5e44bb192f7d929a2653435506dce",
+    "bytes": 348355,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://github.com/voltagent/awesome-design-md"
+  },
+  "https://github.com/kzhrknt/awesome-design-md-jp": {
+    "name": "awesome-design-md-jp",
+    "title": "GitHub - kzhrknt/awesome-design-md-jp: 日本語UIをAIエージェントに正しくつくらせるためのDESIGN.md集。Japanese DESIGN.md collection for AI agents — extending Google Stitch format with CJK typography. · GitH",
+    "sha256": "8b931c97b2c81f334546c7df573bfa257b75db65af1cd8718ff05bdc054fce03",
+    "bytes": 1442647,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://github.com/kzhrknt/awesome-design-md-jp"
+  },
+  "https://github.com/Leonxlnx/taste-skill": {
+    "name": "taste-skill",
+    "title": "GitHub - Leonxlnx/taste-skill: Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop · GitHub",
+    "sha256": "0a81090ce7169b4039ca20660086df82d533d86fc9ceaa529fa40e6e204f716d",
+    "bytes": 350672,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://github.com/Leonxlnx/taste-skill"
+  },
+  "https://blog.duolingo.com/duologues-design-conversations/": {
+    "name": "Duolingo design conversations",
+    "title": "Duolingo Blog",
+    "sha256": "755e078b84a20faa6d5ee28897e454e46c22e0423b98baec9863b19b1072e38f",
+    "bytes": 120088,
+    "checkedAt": "2026-09-06T21:08:12.944Z",
+    "finalUrl": "https://blog.duolingo.com/duologues-design-conversations/"
+  }
+}

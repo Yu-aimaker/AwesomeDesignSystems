@@ -1,0 +1,16 @@
+{
+  "source": "AwesomeDS/",
+  "algorithm": "sha256",
+  "files": {
+    "Components/contracts.md": "71c59f3c45a84fb5222f73e819c2a03c99fb3c7149b87e34435b9a160fbde9b6",
+    "Content/japanese.md": "b9983d678a9a939a5391ffe8241ebfd3a013fc7fd1bec88ef463a71cd826b7f1",
+    "Governance/change-policy.md": "d8d865786f1a8e0164daa6d000d0aa2faff1cdd8ede2a5171aecc9b4dd30eebb",
+    "Patterns/README.md": "a266b20a3ba24bc7701d7ab9fc23870f773d41097ba99640317b078f9b79fbde",
+    "Quality/evidence.md": "d292f841d557a1e9ed4e4efa0fc8a4ea0708623291ac573c2acdea15acf523d4",
+    "README.md": "656ce66bca0e047854618717cca8a23e60e8a6c527e5b213b5997c5d4b6b3f6d",
+    "Technology/selection.md": "92581b4217b4b4d113ce6c93c90e564bd22d6dc885bd101b3e3d350f2bb7348c",
+    "Themes/README.md": "566f2f7816d7b500d018e9451fdba55cf909fe04bc67d790810d19d560c23f68",
+    "foundations.md": "7c22de40d60b9f1e666189e9af5b890f2eaba00d7c68219a269da5869ddb69d4",
+    "tokens.json": "db05baf81bf859626235ec51e4790792ee156c6c0957702675bf2a856f429a54"
+  }
+}
